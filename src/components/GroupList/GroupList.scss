@@ -1,0 +1,60 @@
+@import "../../styles/partials/global";
+
+.group {
+  background-color: $background-color;
+  color: $font-main;
+  width: 50rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-direction: column;
+  margin: 2rem ;
+  padding: 5rem;
+  &__heading {
+    font-weight: 600;
+    font-size: 2rem;
+  }
+  &__add {
+    background-color: $kijiji-purple;
+      color: $kijiji-white;
+      border: none;
+      border-radius: 1.25rem;
+      padding: 0.4rem 0;
+      font-size: 0.9rem;
+      font-weight: 600;
+      width: 15rem;
+      height: 3rem;
+      margin-bottom: 0.5rem;
+      transition: background-color 0.25s;
+      &:hover {
+        background-color: $font-main;
+        color: $kijiji-white;
+        transition: background-color 0.25s;
+        cursor: pointer;
+      }
+    }
+
+  &__facility {
+    width: 65rem;
+  }
+  &__row {
+    background-color: $background-color;
+    &:hover {
+      background-color: $background-color;
+    }
+
+    @include tablet {
+      display: flex;
+    }
+  }
+  &__facility-container {
+    border: 1px solid $kijiji-white;
+    border-radius: 10px;
+    height: 3rem;
+    margin: 2rem;
+    padding: 10px 15px;
+    background-color: $kijiji-white;
+    width: 35rem;
+    font-weight: 550;
+  }
+}

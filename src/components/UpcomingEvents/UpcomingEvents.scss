@@ -1,0 +1,13 @@
+@import "../../styles/partials/global";
+
+.event {
+  &__item {
+    margin: 1rem 0;
+    padding: 1rem 0;
+    border-bottom: 1px solid $font-sub;
+  }
+
+  &__info {
+    color: $font-main;
+  }
+}
