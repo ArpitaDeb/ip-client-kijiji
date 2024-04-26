@@ -1,0 +1,48 @@
+.dropdown {
+    position: relative;
+    display: inline-block;
+&__toggle {
+        background-color: #f8f9fa;
+        border: 1px solid #ced4da;
+        color: #495057;
+        padding: 8px 12px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+&__menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    border-top: none;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 12;
+}
+&__menu,li{
+    padding: .5rem .75rem;
+    cursor: pointer;
+    color: #3e4153;
+}
+    
+}
+
+li:hover {
+    background-color: #EEEEEE;
+}
+
+.homepage-container {
+    position: relative;
+    
+}
+
+.homepage-image-container {
+    position: relative;
+}
+
+.homepage__image {
+    width: 100%;
+}
