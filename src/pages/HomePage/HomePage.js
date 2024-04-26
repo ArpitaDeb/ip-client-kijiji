@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './HomePage.scss'
 import community from '../../assets/image/community.png';
+import { Link } from 'react-router-dom';
 
 const HomePage = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -23,7 +24,7 @@ const HomePage = () => {
                             <li>Classes & Lessons</li>
                             <li>Events</li>
                             <li>Friendship & Networking</li>
-                            <li>Groups</li>
+                            <Link to="/groupsList"><li>Groups</li></Link>
                             <li>Long Lost Relationships</li>
                             <li>Lost & Found</li>
                             <li>Missed Connections</li>
