@@ -1,10 +1,10 @@
 import './FeedPost.scss';
 
-const FeedPost=()=>{
+const FeedPost=({post})=>{
     return(
         <div className='feed-post'>
-            <p className='post-content'>love this product!</p>
-            <h3 className='post-author'>author</h3>
+            <h3 className='post-author'>{post.author}</h3>
+            <p className='post-content'>{post.content}</p>
         </div>
     )
 }

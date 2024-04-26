@@ -1,5 +1,34 @@
-
-
+@import "../../styles/partials/global";
 .location__icon{
     width: 1.875rem;
+}
+
+.group-profile{
+    background-color: $bg-color;
+    color: $kijiji-purple;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 1rem;
+    @include tablet{
+        padding: 2rem;
+    }
+    @include desktop{
+        padding: 2rem auto;
+    }
+}
+
+.group-info2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.group-info3{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.group-info{
+    
 }

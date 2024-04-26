@@ -1,11 +1,15 @@
 @import "../../styles/partials/global";
 
 .feed-post {
-  border: 1px solid $font-sub;
+  border-bottom: 1px solid $font-sub;
   border-radius: 0.25rem;
   padding: 1rem;
+  margin: 1rem 0;
 
   .post-content{
+    color: $font-main;
+  }
+  .post-author{
     color: $font-main;
   }
 }
