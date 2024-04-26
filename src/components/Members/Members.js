@@ -1,12 +1,16 @@
 import React from 'react';
+import './Member.scss'
 
 const Members = ({ members }) => {
     return (
-        <div>
-            <h2>Members</h2>
-            <ul>
+        <div className="member">
+            <h2 className="member__heading">Members</h2>
+            <ul className="member__list">
                 {members.map((member, index) => (
-                    <li key={index}>{member}</li>
+                    <li className="member__wrap" key={index}>
+                        <div className="member__avatar"></div>
+                        <div className="member__name">{member}</div>
+                    </li>
                 ))}
             </ul>
         </div>

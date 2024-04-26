@@ -4,7 +4,10 @@ import { Link, useNavigate } from "react-router-dom";
 import "./GroupList.scss";
 
 const GroupList = ({groupList}) => {
-
+  const navigate = useNavigate();
+  const handleAddGroup = () => {
+    navigate('/addNewGroup');
+  };
   return (
     <>
     <div className="group">
@@ -24,6 +27,7 @@ const GroupList = ({groupList}) => {
         ):null
       ))}
     </div>
+    <button className="group__add" onClick={handleAddGroup}>Add New Groups</button>
     </div>
     </>
   );
