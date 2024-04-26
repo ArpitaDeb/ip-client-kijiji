@@ -1,0 +1,40 @@
+@import "../../styles/partials/global";
+
+.group {
+  background-color: $bg-color;
+  color: $font-main;
+  width: 50rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-direction: column;
+  margin: 10rem;
+  padding: 5rem;
+  &__heading {
+    font-weight: 600;
+    font-size: 2rem;
+  }
+  &__facility {
+    width: 65rem;
+  }
+  &__row {
+    background-color: $bg-color;
+    &:hover {
+      background-color: $bg-color;
+    }
+
+    @include tablet {
+      display: flex;
+    }
+  }
+  &__facility-container {
+    border: 1px solid $kijiji-white;
+    border-radius: 10px;
+    height: 3rem;
+    margin: 2rem;
+    padding: 10px 15px;
+    background-color: $kijiji-white;
+    width: 35rem;
+    font-weight: 550;
+  }
+}
