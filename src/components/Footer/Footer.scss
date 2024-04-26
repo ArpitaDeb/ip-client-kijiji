@@ -1,0 +1,47 @@
+@use "../../styles/partials/breakpoints" as *;
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+
+.footer {
+
+    &__image-mobile {
+        width: 100%;
+
+        @include tablet {
+            display: none;
+        }
+    }
+
+    &__image-tablet {
+        display: none;
+
+        @include tablet {
+            display: flex;
+            width:100%;
+        }
+
+        @include desktop {
+            display: none;
+        }
+    }
+
+    &__image-desktop {
+        display: none;
+
+        @include tablet {
+            display: none;
+        }
+
+        @include desktop {
+            display: flex;
+            width: 100%;
+        }
+    }
+}
