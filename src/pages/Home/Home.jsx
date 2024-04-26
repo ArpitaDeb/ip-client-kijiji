@@ -19,7 +19,7 @@ const Home = () => {
       }
     };
     fetchGroups();
-  }, []);
+  }, [groupList]);
 
   return (
     <>

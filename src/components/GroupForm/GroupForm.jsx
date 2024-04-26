@@ -125,8 +125,8 @@ const AddGroupForm = () => {
                             required
                         >
                             <option value="">Select privacy</option>
-                            <option value="Private">Private</option>
-                            <option value="Public">Public</option>
+                            <option value="private">private</option>
+                            <option value="public">public</option>
                         </select>
                     </div>
                 </div>
