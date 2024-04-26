@@ -1,0 +1,99 @@
+@import "../../styles/partials/global";
+@import "../../styles/partials/colors";
+
+.add-group {
+    display: flex;
+    background-color: $bg-color;
+    padding: 2rem;
+    &__form {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        width: 100%; 
+        padding-right: 1rem;
+        box-sizing: border-box; 
+        margin-bottom: 1rem;
+        
+        @include tablet {
+            width: 50%; 
+        }
+    }
+
+    &__container-left {
+
+        @include tablet {
+            width: 45%; 
+            margin-right: 3rem;;
+            margin-left: 1rem;
+        }
+    }
+
+    &__container-right {
+
+        @include tablet {
+            width: 45%; 
+        }
+    }
+
+    &__label {
+        color: $font-main;
+        margin-bottom: 0.5rem;
+    }
+
+    &__input,
+    &__select,
+    &__textarea {
+        width: 100%;
+        padding: 0.5rem;
+        border: 1px solid #E1E2E6;
+        border-radius: 4px;
+        box-sizing: border-box; 
+        margin-bottom: 1.5rem;
+    }
+
+    &__checkbox {
+        font-size: 11px;
+        color: $font-sub;
+    }
+
+    &__textarea {
+        height: 150px;
+    }
+
+    &__button {
+        height: 36px;
+        padding: 0px 1rem;
+        border-radius: 3px;
+        width: 100%;
+        margin-top: 1rem; 
+        color: $kijiji-white;
+        background-color: #4b4881;
+        border: none;
+        cursor: pointer;
+
+        &:disabled {
+            background-color: $font-sub; 
+            cursor: not-allowed; 
+        }
+
+        @include tablet {
+        }
+    }
+
+    &__name,
+    &__location,
+    &__category,
+    &__tag,
+    &__privacy {
+        width: 100%;
+    }
+
+    &__description {
+        width: 100%;
+    }
+}

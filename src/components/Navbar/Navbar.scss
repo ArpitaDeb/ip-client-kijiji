@@ -1,7 +1,8 @@
 @import '../../styles/partials/global';
 
 .site-header{
-  background-color: $bg-color;
+  background-color: $kijiji-white;
+
   @include tablet {
   flex-direction: row;
   justify-content: space-between;
@@ -21,11 +22,20 @@
 
 .site-header__logo-container{
   display: flex;
-  justify-content: center;
+  justify-content: left;
+
+  @include tablet {
+    justify-content: flex-start;
+  }
+
 }
 
 .site-header__logo{
-  padding: 1.5rem 2rem;
+  padding: 1rem 2rem 0rem 2rem;
+  width: 100%;
+  
+
+
   @include desktop{
     padding: 2rem 4rem;
   }
@@ -34,6 +44,8 @@
 .site-header__navbar{
   width: 100%;
   padding: 0rem 1rem;
+  border-top: 3px solid $kijiji-purple;
+
   @include tablet{
     padding: 0rem;
   }
