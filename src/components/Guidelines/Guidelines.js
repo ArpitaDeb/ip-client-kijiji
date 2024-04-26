@@ -5,10 +5,10 @@ const Guidlines = ({ guidelines }) => {
     return (
         <div>
        <h2>Guidlines</h2>
-       <ul>
+       <ul className='guidline__list'>
        {
         guidelines.map((guideline , index)=>(
-            <li key={index}>{guideline}</li>
+            <li className='guidline__item' key={index}>{guideline}</li>
         ))
        }
 

@@ -38,16 +38,20 @@ const GroupProfilePage = () => {
       <main className="group-profile">
         <div className="group-info1">
           <h1>{groupPage.name}</h1>
+          <div className="info-location">
           <img
             className="location__icon"
             src={LocationIcon}
             alt="location icon"
           />
-          <p>{groupPage.location} </p>
-          <h3>{groupPage.description}</h3>
+          <p className="location-content">{groupPage.location} </p>
+          </div>
+          <h3 className="description">{groupPage.description}</h3>
         </div>
         <div className="group-info2">
+          <div className="group-info">
           <Members members={groupPage.members} />
+          </div>
           <Feed posts={groupPage.post_feeds} />
           <div className="group-info3">
             <div className="group-info">
