@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import Navbar from './components/Navbar/Navbar';
 import Home from './pages/Home/Home';
+import GroupPage from './pages/GroupPage/GroupPage';
 
 import './styles/partials/_global.scss';
 
@@ -14,6 +15,7 @@ function App() {
         </header>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/:groupId" element={<GroupPage />} />
         </Routes>
       </BrowserRouter>
     </div>
