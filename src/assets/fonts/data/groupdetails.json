@@ -1,0 +1,134 @@
+[
+    {
+      "id": 1,
+      "name": "Local Photography Enthusiasts",
+      "description": "A community for photography enthusiasts in Toronto to share tips, techniques, and their passion for photography.",
+      "recommended_sellers": [],
+      "guidelines": [
+        "Respect others' work and provide constructive feedback",
+        "Share your own photography experiences and insights",
+        "Organize local photowalks or meetups to explore the city together"
+      ],
+      "members": ["user1", "user2", "user3", "user4"],
+      "post_feeds": [
+        {
+          "id": 1,
+          "author": "user1",
+          "content": "Just captured a stunning sunset at High Park, check it out!",
+          "timestamp": "2024-04-25T18:30:00Z"
+        },
+        {
+          "id": 2,
+          "author": "user2",
+          "content": "Looking for a photography buddy to explore new locations, any takers?",
+          "timestamp": "2024-04-24T12:45:00Z"
+        },
+        {
+          "id": 3,
+          "author": "user3",
+          "content": "Tips for capturing wildlife photography in urban settings?",
+          "timestamp": "2024-04-23T09:00:00Z"
+        },
+        {
+          "id": 4,
+          "author": "user4",
+          "content": "Organizing a photowalk at Distillery District this Saturday, who's interested?",
+          "timestamp": "2024-04-22T16:20:00Z"
+        },
+        {
+          "id": 5,
+          "author": "user1",
+          "content": "Completed a portrait photography workshop, happy to share what I've learned!",
+          "timestamp": "2024-04-21T14:50:00Z"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Healthy Cooking Club",
+      "description": "Join us to explore the world of healthy cooking and share delicious recipes, cooking tips, and nutritional insights.",
+      "recommended_sellers": [],
+      "guidelines": [
+        "Share your favorite healthy recipes and cooking techniques",
+        "Discuss nutrition and wellness topics related to cooking",
+        "Organize cooking classes or potluck events to try new dishes"
+      ],
+      "members": ["user5", "user6", "user7", "user8"],
+      "post_feeds": [
+        {
+          "id": 1,
+          "author": "user5",
+          "content": "Just made a delicious quinoa salad with roasted veggies, who wants the recipe?",
+          "timestamp": "2024-04-25T11:30:00Z"
+        },
+        {
+          "id": 2,
+          "author": "user6",
+          "content": "Tips for meal prepping for the week ahead?",
+          "timestamp": "2024-04-24T15:20:00Z"
+        },
+        {
+          "id": 3,
+          "author": "user7",
+          "content": "Organizing a healthy cooking workshop next weekend, RSVP if interested!",
+          "timestamp": "2024-04-23T10:00:00Z"
+        },
+        {
+          "id": 4,
+          "author": "user8",
+          "content": "Looking for recommendations for nutritious snacks for kids, any suggestions?",
+          "timestamp": "2024-04-22T12:40:00Z"
+        },
+        {
+          "id": 5,
+          "author": "user5",
+          "content": "Completed a plant-based cooking class, excited to share my new recipes!",
+          "timestamp": "2024-04-21T16:30:00Z"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Mom's Support Network",
+      "description": "A private support network for moms to share experiences, seek advice, and connect with other moms facing similar challenges.",
+      "recommended_sellers": ["babyshop1", "kidsclothing2", "parentingbooks3"],
+      "guidelines": [
+        "Respect each other's privacy and confidentiality",
+        "Offer support and encouragement to fellow moms",
+        "Share resources and recommendations for baby and child-related products/services"
+      ],
+      "members": ["mom1", "mom2", "mom3", "mom4"],
+      "post_feeds": [
+        {
+          "id": 1,
+          "author": "mom1",
+          "content": "Struggling with breastfeeding, any tips?",
+          "timestamp": "2024-04-25T09:45:00Z"
+        },
+        {
+          "id": 2,
+          "author": "mom2",
+          "content": "Recommendations for baby sleep training methods?",
+          "timestamp": "2024-04-24T14:20:00Z"
+        },
+        {
+          "id": 3,
+          "author": "mom3",
+          "content": "Organizing a playdate at the park next week, anyone interested?",
+          "timestamp": "2024-04-23T11:30:00Z"
+        },
+        {
+          "id": 4,
+          "author": "mom4",
+          "content": "Looking for a reliable nanny service, any recommendations?",
+          "timestamp": "2024-04-22T16:50:00Z"
+        },
+        {
+          "id": 5,
+          "author": "mom1",
+          "content": "Completed a baby sign language class, happy to share what I've learned!",
+          "timestamp": "2024-04-21T10:15:00Z"
+        }
+      ]
+    }
+  ]
