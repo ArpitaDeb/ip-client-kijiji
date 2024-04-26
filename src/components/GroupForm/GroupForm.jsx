@@ -14,7 +14,7 @@ const AddGroupForm = () => {
         tags: "",
         privacy: "",
         description: "",
-        doNotSellItems: false, // Initialize checkbox state
+        doNotSellItems: false,
         recommended_sellers: [],
         guidelines: [],
         members: [],
@@ -43,7 +43,7 @@ const AddGroupForm = () => {
     };
 
     const isSubmitDisabled = () => {
-        return !formData.doNotSellItems; 
+        return !formData.doNotSellItems;
     };
 
     return (
@@ -99,17 +99,19 @@ const AddGroupForm = () => {
                             onChange={handleChange}
                         />
                     </div>
-                    <div className="add-group__privacy"> 
+                    <div className="add-group__privacy">
                         <label className="add-group__label">Privacy:</label>
-                        <input
-                            className="add-group__input"
-                            type="text"
-                            placeholder="Privacy"
+                        <select
+                            className="add-group__select"
                             name="privacy"
                             value={formData.privacy}
                             onChange={handleChange}
                             required
-                        />
+                        >
+                            <option value="">Select privacy</option>
+                            <option value="Private">Private</option>
+                            <option value="Public">Public</option>
+                        </select>
                     </div>
                 </div>
                 <div className="add-group__container-right">
@@ -137,7 +139,7 @@ const AddGroupForm = () => {
                     <button
                         className="add-group__button"
                         type="submit"
-                        disabled={isSubmitDisabled()} 
+                        disabled={isSubmitDisabled()}
                     >
                         Add New Group
                     </button>
