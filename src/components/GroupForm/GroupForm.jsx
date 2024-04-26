@@ -2,8 +2,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import "./GroupForm.scss";
-
-const apiURL = "http://localhost:8080/";
+const SERVER_URL = process.env.REACT_APP_API_URL;
 
 const AddGroupForm = () => {
     const navigate = useNavigate();
@@ -15,30 +14,39 @@ const AddGroupForm = () => {
         privacy: "",
         description: "",
         doNotSellItems: false,
-        recommended_sellers: [],
-        guidelines: [],
-        members: [],
-        post_feeds: [],
     });
+
+   
 
     const handleSubmit = async (event) => {
         event.preventDefault();
 
         try {
-            const response = await axios.post(apiURL, formData);
+            const newFormObj ={
+                name: formData.name,
+                location: formData.location,
+                category: formData.category,
+                tags: formData.tags,
+                privacy: formData.privacy,
+                description: formData.description,
+      
+            }
+            console.log(newFormObj)
+            const response = await axios.post(`${SERVER_URL}/groups`, newFormObj);
             console.log("Form submitted successfully", response.data);
-            navigate(`/`);
+            navigate(`/groupsList`);
         } catch (error) {
             console.error("Error submitting form:", error);
         }
     };
 
     const handleChange = (event) => {
-        const { name, value, type, checked } = event.target;
+        const { name, location, value, type, checked } = event.target;
         const newValue = type === "checkbox" ? checked : value;
         setFormData({
             ...formData,
             [name]: newValue,
+            [location]: newValue,
         });
     };
 
@@ -84,8 +92,16 @@ const AddGroupForm = () => {
                             required
                         >
                             <option value="">Select category</option>
-                            <option value="Category 1">Category 1</option>
-                            <option value="Category 2">Category 2</option>
+                            <option value="Category 1">Technology & Gadgets</option>
+                            <option value="Category 2">Travel & Adventure</option>
+                            <option value="Category 3">Fashion & Style</option>
+                            <option value="Category 4">Home Decor & Interior Design</option>
+                            <option value="Category 5">Health & Wellness</option>
+                            <option value="Category 6">Finance & Investment</option>
+                            <option value="Category 7">Sports & Fitness</option>
+                            <option value="Category 8">Art & Design</option>
+                            <option value="Category 9">Music & Entertainment</option>
+                            <option value="Category 10">Science & Innovation</option>
                         </select>
                     </div>
                     <div className="add-group__tag">

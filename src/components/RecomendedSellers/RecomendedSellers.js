@@ -4,10 +4,10 @@ import React from 'react';
 const RecomendedSellers = ({ recomendedSellers }) => {
     return (
         <div>
-            <h2>Recomended Sellers</h2>
-            <ul>
+            <h2 className='seller__title'>Recomended Sellers</h2>
+            <ul className='seller__list'>
                 {recomendedSellers.map((recomendedSeller, index) => (
-                    <li key={index}>{recomendedSeller}</li>
+                    <li className='seller__item' key={index}>{recomendedSeller}</li>
                 ))}
             </ul>
         </div>
