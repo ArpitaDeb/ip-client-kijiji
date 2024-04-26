@@ -52,7 +52,7 @@ const GroupProfilePage = () => {
           <div className="group-info">
           <Members members={groupPage.members} />
           </div>
-          <Feed posts={groupPage.post_feeds} />
+          <Feed posts={groupPage.post_feeds} groupId={groupId} />
           <div className="group-info3">
             <div className="group-info">
               <UpcomingEvents upcomingEvents={groupPage.upcoming_events} />
