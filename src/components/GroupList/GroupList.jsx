@@ -11,15 +11,17 @@ const GroupList = ({groupList}) => {
     <div className="group__heading">List of Groups</div>
     <div className="group__facility">
       {groupList.map((group) => (
-        <div key={group.id} className="group__facility-row">
-          <div className="group__facility-name">
-            <Link to={`/groups/${group.id}`}>
-              <div className="group__facility-container">
-                {group.name}
-              </div>
-            </Link>
+        group.privacy === 'public' ? (
+          <div key={group.id} className="group__facility-row">
+            <div className="group__facility-name">
+              <Link to={`/groups/${group.id}`}>
+                <div className="group__facility-container">
+                  {group.name}
+                </div>
+              </Link>
+            </div>
           </div>
-        </div>
+        ):null
       ))}
     </div>
     </div>
