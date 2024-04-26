@@ -16,6 +16,7 @@ function App() {
           <Navbar />
         </header>
         <Routes>
+
           <Route path="/" element={<HomePage />} />
           <Route path="/groupsList" element={<Home />} />
           <Route path="/addNewGroup" element={<AddNewGroup />} />
