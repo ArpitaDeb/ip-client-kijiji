@@ -92,8 +92,16 @@ const AddGroupForm = () => {
                             required
                         >
                             <option value="">Select category</option>
-                            <option value="Category 1">Category 1</option>
-                            <option value="Category 2">Category 2</option>
+                            <option value="Category 1">Technology & Gadgets</option>
+                            <option value="Category 2">Travel & Adventure</option>
+                            <option value="Category 3">Fashion & Style</option>
+                            <option value="Category 4">Home Decor & Interior Design</option>
+                            <option value="Category 5">Health & Wellness</option>
+                            <option value="Category 6">Finance & Investment</option>
+                            <option value="Category 7">Sports & Fitness</option>
+                            <option value="Category 8">Art & Design</option>
+                            <option value="Category 9">Music & Entertainment</option>
+                            <option value="Category 10">Science & Innovation</option>
                         </select>
                     </div>
                     <div className="add-group__tag">
