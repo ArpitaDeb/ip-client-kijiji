@@ -1,0 +1,26 @@
+[
+    {
+      "id": 1,
+      "name": "Local Photography Enthusiasts",
+      "location": "Toronto",
+      "category": "Photography",
+      "tags": ["photography", "Toronto", "community"],
+      "privacy": "public"
+    },
+    {
+      "id": 2,
+      "name": "Healthy Cooking Club",
+      "location": "Vancouver",
+      "category": "Food & Cooking",
+      "tags": ["cooking", "Vancouver", "healthy", "community"],
+      "privacy": "public"
+    },
+    {
+      "id": 3,
+      "name": "Mom's Support Network",
+      "location": "Various",
+      "category": "Motherhood",
+      "tags": ["motherhood", "support", "community", "private"],
+      "privacy": "private"
+    }
+  ]
