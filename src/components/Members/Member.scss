@@ -1,6 +1,7 @@
 @import "../../styles/partials/global";
 
 .member {
+  width: 200px;
   &__heading {
     font-weight: 700;
   }
@@ -21,7 +22,7 @@
   }
   &__wrap {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
   }
   &__avatar {
     margin: 0;
